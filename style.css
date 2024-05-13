@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 8%);
+}
+
+.section-body {
+    background-color: hsl(0, 0%, 12%);
+    height: fit-content;
+    width: 25%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 70px;
+}
+
+.info-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.info-section>img {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: "Inter-bold";
+    src: url(fonts/Inter-Bold.ttf);
+}
+
+.info-section>h1 {
+    font-family: "Inter-bold";
+    color: white;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.info-section>p {
+    font-family: "Inter-bold";
+    font-size: 12px;
+    color: hsl(75, 94%, 57%);
+    padding-top: 3px;
+}
+
+.social-section {
+    padding-top: 30px;
+}
+
+@font-face {
+    font-family: "Inter-bold";
+    src: url(fonts/Inter-Regular.ttf);
+}
+
+.social-section>p {
+    font-family: "Inter-bold";
+    color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    gap: 15px;
+}
+
+@font-face {
+    font-family: "Inter-bold";
+    src: url(fonts/Inter-SemiBold.ttf);
+}
+
+.social-buttons button {
+    width: 93%;
+    height: 40px;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter-bold";
+    font-size: 12px;
+}
+
+.social-buttons button:hover  {
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:378px) {
+    .section-body {
+        width: 290px;
+    }
+
+    .info-section>h1 {
+        font-size: 23px;
+    }
+
+    .social-section>p {
+        font-size: 12px;
+    }
+}
